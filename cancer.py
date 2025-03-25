@@ -188,3 +188,9 @@ joblib.dump(le, 'label_encoder.pkl')
 # Save feature names
 feature_names = list(X_train.columns)
 joblib.dump(feature_names, 'feature_names.pkl')
+
+
+# Save model artifacts
+joblib.dump(X_test, 'X_test.pkl')
+joblib.dump(y_test, 'y_test.pkl')
+
